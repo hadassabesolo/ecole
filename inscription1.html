@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylisation.css">
+    <link rel="stylesheet" href="deco.css">
+</head>
+<body class="inscription">
+    <header>
+        <img src="toph\file_000000005974523090ad391b04f0cdc3_conversation_id=67f2ad87-8d28-800b-b157-d53f21741818&message_id=0cb3178b-765f-4d5c-a493-2b21d746b77c.PNG" 
+        height="90" width="150">
+        
+        <nav>
+            <ul>
+                <li><a href="Accuel.html">Accueil</a></li>
+                <li><a href="A propos.html">A propos</a></li>
+                <li><a href="programmes.HTML">Nos programmes</a></li>
+                <li><a href="orientation.html">Orientation</a></li>
+
+                 <!-- systeme de notification -->
+                <li><a href="formu_espaceParent.php">espace parents
+                    <span class="notif">&#128276; 
+                        <span class="nbre">+8</span>
+                    </span>
+                </a></li>
+                
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- on utilise une balise formilaire venant apres section pour respecter la logique -->
+        <!-- <h1>Formulaire d'inscription  2024-2025</h1> -->
+        <form action="/soumettre" method="POST">
+            <h1>Formulaire d'inscription  2024-2025</h1>
+            <section>
+                <h2>Information sur l'enfant</h2>
+                <fieldset>
+                    <legend>Nom, Post-nom & Prénom, Date de naissance,Adresse</legend>
+                    <br><label for="nom">Nom/Post-nom/prenom:</label>
+                    <input type="text" id="enfant" name="nom_enfant" required><br>
+                    <br><label for="date">Date de naissance:</label>
+                    <input type="text" name="date" id="date" required><br>
+                    <br><label for="genres">Genre:</label>
+                    <input type="text" id="genres" name="genres" required><br>
+                    <br><label for="Classe">Classe:</label>
+                    <input type="text" id="Classe" name="Classe" required><br>
+
+                    <br><label for="nationalte">Nationalite:</label>
+                    <input type="text" name="nationalite" id="nationalite" required><br>
+                    <br><label for="adresse">Adresses:</label>
+                    <input type="text" name="adresse" id="adresse" required><br>
+                    <p>Cadre reserver a l'administraction</p>
+                    <textarea name="laisser un message" id="votre message"></textarea>
+                </fieldset>
+            </section>
+            <section>
+                <h2>Information sur les parents ou responsables légaux</h2>
+                <fieldset>
+                    <legend>Responsables</legend>
+                   <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Parents</th> 
+                                <th>Père</th>
+                                <th>Mère</th>
+                                <th>Tuteur</th>
+                            </tr>
+                        </thead>
+                        <tbody>    
+                            <tr>
+                                <td>Nom</td>
+                                <td><input type="text" name="nom " id="nom du  père" required></td>
+                                <td><input type="text" name="nom " id=" nom de la mere" required></td>
+                                <td><input type="text" name="nom " id="nom du tuteur" required></td>
+
+                            </tr>
+                            <tr>
+                                <td>Post-nom</td>
+                                <td><input type="text" name="post-nom du père" id="post-nom du  père" required></td>
+                                <td><input type="text" name="post-nom de la mere" id=" post-nom de la mere" required></td>
+                                <td><input type="text" name="post-nom du tuteurs" id="post-nom du tuteur" required></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>Prenom</td>
+                                <td><input type="text" name="prenom du père" id="prenom du  père" required></td>
+                                <td><input type="text" name="prenom de la mere" id=" prenom de la mere" required></td>
+                                <td><input type="text" name="prenom du tuteurs" id="prenom du tuteur" required></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>Profession</td>
+                                <td><input type="text" name="profession du père" id="prenom du  père" required></td>
+                                <td><input type="text" name="profession de la mere" id=" profession de la mere" required></td>
+                                <td><input type="text" name="profession du tuteurs" id="profession du tuteur" required></td>
+
+                            </tr>
+                            <tr>
+                                <td>telephone</td>
+                                <td><input type="text" name="numero du père" id="numero du  père" required></td>
+                                <td><input type="text" name="numero de la mere" id=" numero de la mere" required></td>
+                                <td><input type="text" name="tel du tuteurs" id="tel du tuteur" required></td>
+
+                            </tr>
+                            <tr>
+                                <td>Adresse</td>
+                                <td><input type="text" name="adresse du père" id="adresse du  père" required></td>
+                                <td><input type="text" name="adresse de la mere" id=" adresses de la mere" required></td>
+                               <td><input type="text" name="adresses du tuteurs" id=" Adresse du tuteurs" required></td> 
+
+                            </tr>
+                            
+                        </tbody>    
+                   </table>
+                </fieldset>
+            </section>
+            <h3>Votre enfant beneficiera:</h3>
+            <li>d'une assistance social ou d'application d'un projet d'accueil individualisé</li>
+            <h3><strong>Offrez à votre enfant un avenir brillant au collège  Sainte Trnité!Rejoignez-nous et
+                 contruisons ensemble son succés.Ne tardez pas , les inscriptions se termine 
+                 le 2juin 2025</strong></h3>
+             <div class="toucher"> 
+            <button type="submit">Envoyer</button> 
+            </div> 
+            
+        </form> 
+        <br><br> 
+        <footer>
+            <section id="fin">
+                <!-- IL FAUT METTRE DES ICONES VOIR PHOTO -->
+                <div class="contact">
+                    <h3>Nom de l'etablissement : collège sainte trinité </h3>
+                    <p>Av\ de l'excellence Q\MBIZA Pompage C\NGALIEMA</p>
+                    <p>telephone:+243836018034</p>
+                    <p><a href="estherbesolo@05.com">contact@sainte trinité.fr</a></p>
+                    <p>Horaires d'ouverture:lundi-vendredi,07h30-16h30</p>
+                </div>
+                <div class="suivie">    
+                        <h4>Suivez-nous sur les reseaux sociaux</h4>
+                        <p>facebook | instagram | Twitter</p>
+                        <h4>Liens rapides:</h4>
+                        <ul>
+                            <li><a href="Accuel.html">Accueil</a></li>
+                            <li><a href="A propos.html">A propos</a></li>
+                            <li><a href="programmes.HTML">Nos programmes</a></li>
+                            <li><a href="orientation.html">Orientation</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="espace parents.html">espace parents</a></p>
+                        </ul>
+                </div>
+                <div class="mention">
+                    <ul>      
+                        <strong>Mentions légales et politique de confidentialité</strong><br>
+                        <li><a href="Mentions légales">Mensions légales</a></li>
+                        <li><a href="politique de confidentialité">politique de confidentialité</a></li>
+                    </ul>
+                </div>    
+                    
+
+                    <br><strong>credits</strong><br>
+                    <p>© 2025 Collège Sainte Trinité. Tous droits réservés</p>
+                    <p>conception et réalisation: Besolo hadassa esther</p>
+            </section>        
+        </footer>    
+
+    </main>
+
+    
+</body>
+</html>

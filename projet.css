@@ -1,0 +1,98 @@
+/* body prend en compte tous les elts de la page */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding: 0;
+    background-color: gainsboro; 
+    /* background-color: #f4f4f9; */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* On va styliser l'entete */
+header{
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding:15px;
+    box-shadow:#333;
+    position: sticky;
+    top:0;
+    height:8rem;
+    height: auto;
+    padding: 15px 20px;
+    text-align: left;
+    position: sticky;
+    top:0;
+
+}
+header h1{
+    font-size: 28px;
+    margin: 10px 0;
+    font-weight: bolder;
+}
+
+/* On entrer a la balise nav :pour naviguer entre le lien */
+nav ul{
+     list-style-type: none; /* pour supprimer le pointiller */
+     padding:0;
+    text-align:center;    
+    border-color: #002f5e;
+    margin:0;
+}
+
+nav ul li{
+    display: inline;  /*pour alligner les elements  verticalemet */
+    margin:0 1px; /* Pour espacer les liens */
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* pour supprimer  le soulignement*/
+    font-size: 16px;  /*pour la tailles des ecrits*/
+    padding: 10px;/* espacement interne cad espace entre le liens */
+    display: inline-block; /*la forme de l'entete */
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: red ;/*  #0055b3;  pour changer de couleurs lorsqu'on survole      */ 
+    border-radius:5px; /* arrondir le coin dusurvole         */    
+    
+}
+
+/* pour styliser la partie central (revoir cette partie) */
+main{
+
+    width:90% ;/*  */
+    max-width: 1200px;/*  */
+    margin: 5px auto; /*Pour arranger la marge externe (espace entre le main et la partie externe)  */
+    padding: 40px ;
+    background: white; /*ca c'est la couleur special pour la partie main  */
+    border-radius: 10px ; /*pour le bordure de l'encadrement  */
+    box-shadow: 0 4px 10px rgb(0, 0, 0) ;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+
+
+
+}
+
+footer{
+    background-color: #002147;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    list-style: none;
+
+}
+
+
+
+

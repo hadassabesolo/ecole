@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="ESSAI.css"> -->
+    <link rel="stylesheet" href="deco.css">
+</head>
+<body class="essai">
+    <header>
+
+    </header>
+
+    <main>
+        <!-- <form action="/soumettre" method="POST"> 
+            Section générale du formulaire 
+            <section>
+              <h2>Informations Personnelles</h2>
+              <fieldset>
+                <legend>Nom et Prénom</legend>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+          
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+              </fieldset>
+             </section>
+             <section>
+                <h2>Coordonnées</h2>
+                <fieldset>
+                  <legend>Email</legend>
+                  <label for="email">Email :</label>
+                  <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+              </section>
+              <!-- Bouton de soumission 
+            <button type="submit">Envoyer</button>
+         </form> -->
+         <form action="soumettre" method="POST">
+              <Section >
+                <h2>Information sur l'enfant</h2>
+                <fieldset>
+                    <legend>Nom, Post-nom & Prénom, Date de naissance,Adresse</legend>
+                    <br><label for="nom">Nom/Post-nom/prenom</label><br>
+                    <input type="text" id="nom" name="nom" required>
+                    <br><label for="genres">Genre:</label><br>
+                    <input type="text" id="genres" name="genres">
+                    <br><label for="nationalte">Nationalite:</label><br>
+                    <input type="text" name="nationalite" id="nationalite">
+                    <br><label for="adresse">Adresses:</label><br>
+                    <input type="text" name="adresse" id="adresse">
+                    <p>Cadre reserver a l'administraction</p>
+                    <textarea name="laisser un message" id="votre message"></textarea>
+                </fieldset>
+                </Section>
+                <Section>
+                <h2>Information sur les parents ou responsables légaux</h2>
+                <fieldset>
+                    <legend>Coordonnées</legend>
+                   <table border="1">
+                        <thead></thead>
+                            <tr>
+                                <th>Parents</th> 
+                                <th>Père</th>
+                                <th>Mère</th>
+                                <th>Tuteur</th>
+                            </tr>
+                        </thead>
+                        <tbody>    
+                            <tr>
+                                <td>Nom</td>
+                                <td><input type="text" name="nom du père" id="nom du  père"></td>
+                                <td><input type="text" name="nom de la mere" id=" nom de la mere"></td>
+                                <td><input type="text" name="nom du tuteurs" id="nom du tuteur"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Post-nom</td>
+                                <td><input type="text" name="post-nom du père" id="post-nom du  père"></td>
+                                <td><input type="text" name="post-nom de la mere" id=" post-nom de la mere"></td>
+                                <td><input type="text" name="post-nom du tuteurs" id="post-nom du tuteur"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>Prenom</td>
+                                <td><input type="text" name="prenom du père" id="prenom du  père"></td>
+                                <td><input type="text" name="prenom de la mere" id=" prenom de la mere"></td>
+                                <td><input type="text" name="prenom du tuteurs" id="prenom du tuteur"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>Profession</td>
+                                <td><input type="text" name="profession du père" id="prenom du  père"></td>
+                                <td><input type="text" name="profession de la mere" id=" profession de la mere"></td>
+                                <td><input type="text" name="profession du tuteurs" id="profession du tuteur"></td>
+
+                            </tr>
+                            <tr>
+                                <td>telephone</td>
+                                <td><input type="text" name="numero du père" id="numero du  père"></td>
+                                <td><input type="text" name="numero de la mere" id=" numero de la mere"></td>
+                                <td><input type="text" name="tel du tuteurs" id="tel du tuteur"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Adresse</td>
+                                <td><input type="text" name="adresse du père" id="adresse du  père"></td>
+                                <td><input type="text" name="adresse de la mere" id=" adresses de la mere"></td>
+                               <td><input type="text" name="adresses du tuteurs" id=" Adresse du tuteurs"></td> 
+
+                            </tr>
+
+                            
+
+
+                        </tbody>    
+                   </table>
+                </fieldset>
+            </section>
+
+            <!-- <section> 
+                <fieldset>
+                    <legend>Nom, Post-nom & Prénom, Date de naissance,Adresse(Mère)</legend>
+                    <br><label for="nom">Nom:</label><br>
+                    <input type="text" id="nom" name="nom" required>
+                    <br><label for="post-nom">Post-nom:</label><br>
+                    <input type="text" id="Post-nom" name="post-nom">
+                    <br><label for="prenom">Prenom:</label><br>
+                    <input type="text" id="prenom" name="prenom">
+                    <br><label for="adresse">Adresses:</label><br>
+                    <input type="text" name="adresse" id="adresse">
+                    <br><label for="profession">Profession:</label><br>
+                    <input type="text" name="profession" id="profession">
+                    <br><label for="Adresse"> Adresses:</label><br>
+                    <input type="text" name="Adresse" id="Adresse">
+                    <br><label for="telephone">telephone:</label><br>
+                    <input type="text" name="telephone" id="telephone">
+                    <br><label for="email">Email:</label><br>
+                    <input type="text" name="Email" id="Email">
+                    
+                </fieldset>
+            </section>
+            <section>
+                <h2>En cas d'absence , je designe</h2>
+                <fieldset>
+                    <legend>Nom, Post-nom & Prénom, Date de naissance,Adresse(Mère)</legend>
+                    <br><label for="nom">Nom:</label><br>
+                    <input type="text" id="nom" name="nom" required>
+                    <br><label for="post-nom">Post-nom:</label><br>
+                    <input type="text" id="Post-nom" name="post-nom">
+                    <br><label for="prenom">Prenom:</label><br>
+                    <input type="text" id="prenom" name="prenom">
+                    <br><label for="adresse">Adresses:</label><br>
+                    <input type="text" name="adresse" id="adresse">
+                    <br><label for="profession">Profession:</label><br>
+                    <input type="text" name="profession" id="profession">
+                    <br><label for="Adresse"> Adresses:</label><br>
+                    <input type="text" name="Adresse" id="Adresse">
+                    <br><label for="telephone">telephone:</label><br>
+                    <input type="text" name="telephone" id="telephone">
+                    <br><label for="email">Email:</label><br>
+                    <input type="text" name="Email" id="Email">
+                    
+
+                 
+             </section> 
+              -->
+            <h3>Votre enfant beneficiera:</h3>
+            <li>d'une assistance social ou d'application d'un projet d'accueil individualisé</li>
+            <h3><strong>Offrez à votre enfant un avenir brillant au collège  Sainte Trnité!Rejoignez-nous et
+                 contruisons ensemble son succés.Ne tardez pas , les inscriptions se termine 
+                 le 2juin 2024</strong></h3>
+            <div class="toucher">
+                <button type="submit">Envoyer</button>
+            </div>   
+            
+            
+        </form>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+            
+          
+        
+    </main>
+    
+</body>
+</html>

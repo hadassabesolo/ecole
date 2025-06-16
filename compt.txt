@@ -1,0 +1,12 @@
+
+<div class="carte">
+                    <div class="compt">
+                        <img src="toph/WhatsApp Image 2025-05-21 à 23.18.28_60f3bf57.jpg"
+                        width="350" heith="450">
+                     </div>
+                     
+                    <div class="info"><strong>Nom :</strong> josue yave</div>
+                    <div class="info"><strong>classe :</strong> 5ème SC\A</div>
+                    <div class="info"><strong>Votre email :</strong> fanny28@gmail.com</div>
+                    <div class="info"><strong>heure et date de votre entré:</strong> 2025-06-05 11:10:24</div>
+            </div>

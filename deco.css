@@ -1,0 +1,390 @@
+body.Accueil ul li{
+    list-style: none; /* pour enlever le pointiller dans notre page accuel*/
+
+}
+
+body.Accueil #site .info ul li{
+    list-style-type: square; /*pour mettre  le carré au lieu de pointillé pcq le liste implique de point 
+    par defaut*/
+    text-align: left;/*pour mettre le text a gauche pour qu'elle ne soit pas centrer*/
+    }
+    body.Accueil #principal .cycles ul li{
+        list-style-type: square;
+        text-align: left;
+        
+    
+    }    
+
+
+
+/*cette classification nous a acceder aux elts d'une page et rendre cette page particulier */
+/* 1. on commence par initialiser la section (arranger) */
+body.Accueil #secondaire {
+    display: flex; /*aligne tous elts a la meme ligne*/
+    gap: 8px; /*nous permet d'espacer les contenues(image, text)*/
+    overflow-x: auto; /* permet de faire un defilement horizontal du contenu pour bien voir*/
+    padding: 10px; /*pour ajouter l'espace interne dans la section*/
+    
+
+    
+}
+/* 2.on initialise chaque div  de la section on commence par 1ere , 2eme, 3eme*/
+body.Accueil #secondaire .visite{
+    flex: 0 0 300px; /**/
+    background-color:white;
+    border-radius:10px; /* arrondit les extremiter(bordure ou sommet)*/
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /*ajoute un peut d'ombre au contour du div*/
+    padding: 15px; /*rajoute de l'espace dans le div*/
+    text-align: center;
+}
+/*on initialise les elts de chaque div */
+body.Accueil #secondaire .visite img{
+    width: 300px;
+    border-radius:10px; 
+
+
+}
+
+body.Accueil #secondaire .visite h3{
+    font-size:20px;
+    margin: 10px 0;
+}
+
+body.Accueil #secondaire .visite p{
+    font-size: 16px;
+    color:gray;
+}
+
+/* on passe au 2eme div (bloc) */
+
+body.Accueil #secondaire .competition{
+    flex: 0 0 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+
+}
+
+body.Accueil #secondaire .competition img{
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+body.Accueil #secondaire .competition h3{
+    font-size: 20px;
+    margin: 10px;
+}
+body.Accueil #secondaire .competition p{
+    font-size: 16px;
+    color: gray;
+}
+
+
+/* on passe au 3eme div */
+body.Accueil #secondaire .plante{
+    flex: 0 0 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+
+}
+
+body.Accueil #secondaire .plante img{
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+body.Accueil #secondaire .plante h3{
+    font-size: 20px;
+    margin: 10px;
+}
+body.Accueil #secondaire .plante p{
+    font-size: 16px;
+    color: gray;
+}
+
+
+
+/* On passe au 4eme div */
+body.Accueil #secondaire .presse{
+    flex: 0 0 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+
+}
+
+body.Accueil #secondaire .presse img{
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+body.Accueil #secondaire .presse h3{
+    font-size: 20px;
+    margin: 10px;
+}
+body.Accueil #secondaire .presse p{
+    font-size: 16px;
+    color: gray;
+}
+
+
+
+
+/* 2eme page */
+body.programmes #info ul li{
+    list-style-type: square;
+    text-align:left;
+    width: 80%;
+    margin: 0 auto;
+
+    /* margin: 50px ; */
+
+}
+body.programmes ul li{
+    list-style: none;
+}
+
+/* on va initialiser la premiere section qui a 3div */
+body.programmes #humanité {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    
+}
+
+body.programmes #humanité .partie6 {
+    /* flex:0 0 300px ; */
+    background-color:aquamarine;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* padding: 13px; */
+    text-align: center;
+} 
+body.programmes #humanité .partie6 h4{
+    font-size:18px;
+    margin: 10px 0;
+}
+body.programmes #humanité .partie6 ul li{
+    font-size:14px;
+    color: brown;
+}
+
+
+body.programmes #humanité .partie5 {
+    /* flex:0 0 300px ; */
+    background-color:violet;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 13px;
+    text-align: center;
+} 
+body.programmes #humanité .partie5 h4{
+    font-size:18px;
+    margin: 10px 0;
+}
+body.programmes #humanité .partie5 ul li{
+    font-size:14px;
+    color: brown;
+}
+
+
+body.programmes #humanité .partie4 {
+    /* flex:0 0 300px ; */
+    background-color:yellow;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 13px;
+    text-align: center;
+} 
+body.programmes #humanité .partie4 h4{
+    font-size:18px;
+    margin: 10px 0;
+}
+body.programmes #humanité .partie4 ul li{
+    font-size:14px;
+    color: brown;
+}
+
+
+/* on passe a la 2eme section */
+body.programmes #seo{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 9px;
+}
+
+body.programmes #seo .partie3{
+    /* flex: 0 0 300px; */
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    padding:15px;
+    text-align: center;
+}
+body.programmes #seo .partie3 h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+body.programmes #seo .partie3 ul li{
+    font-size: 14px;
+    color: brown;
+}
+
+
+body.programmes #seo .partie2{
+    /* flex: 0 0 300px; */
+    background-color:bisque;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    /* padding:15px; */
+    text-align: center;
+}
+body.programmes #seo .partie2 h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+body.programmes #seo .partie2 ul li{
+    font-size: 14px;
+    color: brown;
+}
+
+
+body.programmes #seo .partie1{
+    /* flex: 0 0 300px; */
+    background-color:lightblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    /* padding:15px; */
+    text-align: center;
+}
+body.programmes #seo .partie1 h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+body.programmes #seo .partie1 ul li{
+    font-size: 14px;
+    color: brown;
+}
+
+
+
+
+body.contact ul li{
+    list-style: none;
+}
+
+
+
+
+/* Page contact , on commence par initialiser le formulaire */
+form{
+    max-width:700px;
+    margin: 20px auto;
+    padding:20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    margin: auto;
+}
+
+/* la section se trouve a l'interieur du formulaire */
+form section{
+    max-width: 700px;
+    margin: 30px auto; /*ramene la section au centre en espacant*/
+    padding: 10px;
+    background-color: #f4f8ff;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*l'ombrage*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form section h2{
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px; /*espace le titre des  autres elts*/
+
+}
+fieldset{
+    border: 1px solid red; /*pour la coleur du cadrage*/
+    border-radius: 8px;
+    padding: 15px;/*aggrandit l'espace interne*/
+}
+legend{
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px; /*met de l'espace entre legend et fieldset*/
+
+}
+label{
+    display: block;
+    /*margin-top: 5px;*/ /*met l'espace entre le case et l'etiquette*/
+    text-align: left; /*pour ramener les etiquettes au coin*/
+
+}
+input[type="text"],
+input[type="text"],
+input[type="text"],
+textarea{
+    width: 100%; /*pour la largeur de case*/
+    padding: 2px; /*pour agrandire l'espace interne de case*/
+    box-sizing: border-box; /*pour faire entrer les lignes a l'interieur de case*/
+    border: 1px solid #ccc; /*la couleur du bordure*/
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+textarea{
+    height: 100px; /*pour aggrandir l'espace*/
+    resize: none; /*pour limiter le text*/
+
+}
+button{
+    background-color: #007bff;
+    color: #ccc;
+    padding: 12px; /*pour aggrandir l'espace interne */
+    border: none; /*pour enlever la ligne noir du bordure par defaut*/
+    border-radius: 6px; /*la structure du contour du bordure*/
+    font-size: 16px; /*la taille des ecrits*/
+    font-weight: bold; /*pour mettre le text en gras*/
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: red;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+/* cas des elts qu'on arrive pas a centré */
+body.orientation .montant{
+    display: flex;
+    justify-content: center;
+
+}
+

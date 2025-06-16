@@ -1,0 +1,173 @@
+/* l'initialisation de ma page */
+body{
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin:0;
+   padding:0;
+   background-color:gainsboro;
+   color:#333;
+
+}
+
+
+/* l'entete de la page */
+
+header{
+
+    background-color: #004080;
+    color: white;
+    padding: 15px 20px;
+    display: flex;/*pour bien organiser le titre et le menu(separer le titre du menu)*/
+    justify-content:space-between; /*pour placer le menu a droite*/
+    align-items: center; /* placer les menus au centre*/
+    position: sticky;
+    top: 0;
+
+
+}
+     
+nav ul{
+    list-style: none;
+    padding:0;
+    margin: 0;
+   display: flex;/* i sa permet d'alligner le menu horizontalement*/
+
+}
+
+nav ul li {
+    margin-left: 20px; /*mettre l'espace entre le lien*/
+}
+nav ul li a {
+    text-decoration: none; /*enleve le soulignement*/
+    color: white;
+    font-weight:bold; /* mettre le texte en gras*/
+    /* display: inline-block; */
+    transition:0.3s ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background-color:red;
+}
+
+
+/* la partie central de la page */
+
+main{
+    /* width: 90%; fait en sorte que main occupe 90% de la largeur du contenu de l'ecran */
+    max-width:1200px;
+     margin: 45px auto;/* s'occupe de la marge externe de la partie haut de main  */
+    padding:20px; /* ajoute de l'espace dans la partie haut a l'interrieur de main */
+    background-color: #f5f5f5;;
+    border-radius: 10px; /* Pour arrondir le coin de l'encadrement*/
+     box-shadow:0 4px 10px rgba(0, 0, 0);  /* Pour la couleur de la ligne de l'encadrement*/
+    text-align: center;
+    margin: 4px auto;/*s'occupe de l'espace entre main et body en haut*/
+
+}
+
+/* .cycles ul li{ (on revient)
+    list-style: none;
+}
+.bienvenue ul li{
+    list-style: none;
+}
+.info ul li{
+    list-style: none;
+ } */
+
+
+
+
+/* le pieds de la page */
+
+footer{
+    background: #002147;
+    color: white;
+    padding: 20px 0; /* Ajoute de l'espace dans la partie bas de main*/
+    text-align: center;
+    
+}
+
+/* .suivie ul li{ 
+    list-style: none;
+ */
+
+#fin{
+    display: flex; /*Organise les elts  (les bloc cote a cote) et reduit le cadrage de la partie footers*/
+    justify-content: space-around;  /**/
+    flex-wrap: wrap;  /*permet au bloc de chaque elts de passer a la ligne si l'ecran est petit*/ 
+    padding: 20px;/*ajoute de l'espace en haut de footers*/
+} 
+.contact .suivie, .mention{
+    width:30%; /*la taille de la largeur que doit avoir chaque section*/
+    min-width: 250px; /*largeur minimal pour eviter que le blocs soit trop petit*/
+    text-align: left; /*allignement du text a gauche*/
+}
+
+.suivie ul{
+    list-style: none; 
+    padding: 0; /*pousse le lien vers la droite*/
+}
+.suivie{
+    margin: 5px 0; /*espace les elts de la liste*/
+}
+.suivie a{
+    color: white;
+    text-decoration: none;/*permet d'enlever le soulignement*/
+}
+.mention{
+    margin-top: 20px; /* pour ajouter l'espace au dessus du div  */
+    border-top: 1px solide white ; /*Pour mettre une ligne blanche au dessus du div*/
+    padding-top: 10px; /*pour mettre de l'espace au dessus de cette ligne blanche*/
+    
+
+
+}
+.mention ul {
+    color: white;
+}
+.mention ul a{
+    text-decoration: none;
+    color: #f5f5f5;
+    
+}
+
+
+
+   /* systeme de notification  */
+   .notif{
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+   }
+   .nbre{
+    position: absolute;
+    top: -8px; /*fait monter le nbre au desus de la cloche*/
+    right: -8px; /*rapproche le nbre près de la cloche*/
+    background: red;
+    color: aliceblue;
+    border-radius: 55%;
+    padding: 2px 3px;
+    font-size: 10px; /*pour arranger la taille de la boule*/
+
+   }
+
+
+
+   /* cas particulier de positionnement de liste */
+   .liste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+   
+   
+
+
+
+
+

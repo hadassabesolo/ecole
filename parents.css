@@ -1,0 +1,179 @@
+/* page espace parents section 1 */
+body.espace .bienvenue{
+    background-color:lavender;
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    text-align:justify;
+    padding: 20px;
+
+    
+}
+body.espace .bienvenue ul{
+    list-style-type: disc;
+    padding-left: 0;
+    margin-top: 10px;
+}
+body.espace .bienvenue li{
+    margin: 5px 0;
+
+}
+/* page espace section 2 */
+body.espace #annonces{
+    display: flex;
+    padding: 20px;
+
+
+}
+
+body.espace #annonces .formu{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    background-color:palegreen;
+}
+body.espace #annonces .general{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:10px; /*pour determiner les espaces (margin et pading*/
+    margin: 10px; 
+    background-color:goldenrod;
+}
+body.espace #annonces .personnel{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    background-color:cornflowerblue;
+}
+body.espace #annonces .rep{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    background-color:#888;
+}
+body.espace #annonces .com{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    background-color:yellow;
+}
+
+
+body.espace button{
+    padding: 15px;
+    border: 1px solid black ;
+    border-radius: 5px;
+    background-color: #1a4fa1;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom:20px ;
+}
+
+body.espace button a{
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+body.espace button:hover{
+    background-color: skyblue;
+}
+
+
+
+
+
+
+/* 2ème Page */
+body main{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:lightcyan;
+    padding: 20px;
+    color:#333;
+
+  
+}
+
+
+body main h1{
+    text-align: center;
+    color: #1a4fa1;
+
+
+}
+/* communiquer */
+body main section{ 
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+body main div{
+    background-color:#f0f8ff;
+    border-left: 6px solid #1a4fa1;
+    padding: 5px;
+    margin-bottom:30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius:6px;
+    
+} 
+.date{
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+body button{
+    padding: 15px;
+    border: 1px solid black ;
+    border-radius: 5px;
+    background-color: #1a4fa1;
+    cursor: pointer;
+    /* display: flex; met le bouton a gauche */
+    margin-bottom:20px ;
+}
+body button a{
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+body button:hover{
+    background-color: red;
+}
+
+.btn{
+    display: flex;
+}
+
+/* 3eme pages (on a deja connecter) */
+body.myform main{
+    background-color: #f0f8ff;
+}
+
+body.myform main form button{
+    padding: 10px;
+    margin: 20px;
+}
+
+
+    
+  
+
+         
+
+
+
+
+
+
+
+
+
+
